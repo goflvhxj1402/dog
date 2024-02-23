@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* 초기화 */
+* { box-sizing: border-box; }
+body, h1, h2, h3, ul, p { margin: 0; padding: 0; }
+li { list-style: none; }
+a { text-decoration: none; }
+hr { display: none; }
+.hidden { position: absolute; 
+          width: 1px; height: 1px; 
+          margin: -1px; 
+          clip: rect(0 0 0 0); }
+/* 전체영역 및 웹폰트 */
+@font-face { font-family: monggeul; 
+            src: url(../font/monggeulR.ttf), url(../font/monggeulR.woff)
+}
+@font-face { font-family: 나눔네오; 
+            src: url(../font/NSNeo-bRg.ttf), url(../font/NSNeo-bRg.woff)
+}
+body { width: 800px; margin: 0 auto; font-family: 나눔네오; }
+/* 헤더영역 */
+#header { position: relative; height: 150px; margin-top: 8px; background: #f46075; }
+#header h1 { width: 185px; height: 150px; }
+#header h1 a { display: block; height: 100%; 
+               background: url(../images/logo.png);
+               text-indent: -150%; overflow: hidden;
+            }
+/* GNB */
+#gnb { position: absolute; left: 290px; top: 80px; }
+/* #gnb ul { display: flex; }
+#gnb ul li { margin-right: 30px; } */
+#gnb ul li { float: left; margin-right: 30px; }
+#gnb ul li a { color: #fff; }
+#gnb ul li a:hover { background: #000; }
+/* 본문 */
+main { width: 564px; float: left; }
+#content h2 { line-height: 82px; text-indent: 6px; }
+#content article { width: 272px; height: 242px; float: left; 
+                   margin: 0 0 10px 10px;
+                   padding: 25px 10px 0;
+                   border: 1px solid #ccc;  }
+#content .dogHouse:hover { }
+#content .dogFood:hover { }
+#content .dogWater:hover { }
+#content .dogName:hover { }
+#content article a { color: #333; }
+#content article h3 { margin-bottom: 18px; font-size: 16px; }
+#content article p { line-height: 18px; font-size: 13px; }
+/* aside */
+#puppyPhoto { width: 202px; float: right; 
+              margin-top: 82px; padding: 10px 0;
+              border: 1px solid #006400; 
+              background: #ffcc; 
+              text-align: center; }
+/* 푸터 */
+footer { clear: both; 
+        background: #333; color: #fff; 
+        text-align: center; line-height: 60px; }
